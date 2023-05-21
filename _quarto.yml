@@ -1,3 +1,41 @@
 project:
   type: website
   output-dir: docs
+
+website:
+  title: "Open Source Clinical Reporting summeR"
+  description: "R programing workshop/conference with the focus of clinical reporting"
+  site-url: https://urban-journey-ov1k2l9.pages.github.io/
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+        icon: "house-fill"
+      - href: reg.qmd
+        text: Registration
+        icon: "calendar"
+      - href: program.qmd
+        text: Program
+        icon: "file-earmark-slides"
+  page-footer:
+    center:
+      - text: "NEST"
+        href: https://insightsengineering.github.io/nest/
+      - text: "Good software engineering practice for R packages"
+        href: https://openpharma.github.io/workshop-r-swe/
+
+format:
+  html:
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    theme: cosmo
+    mainfont: system-ui
+    fontcolor: "#161b58"
+    css: styles.css
+    toc: false
+
+editor: source
