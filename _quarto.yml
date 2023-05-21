@@ -17,6 +17,9 @@ website:
         icon: "calendar"
       - href: program.qmd
         text: Program
+        icon: "folder"
+      - href: slides.qmd
+        text: Slides
         icon: "file-earmark-slides"
   page-footer:
     center:
