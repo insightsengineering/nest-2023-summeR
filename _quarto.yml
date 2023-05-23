@@ -5,7 +5,7 @@ project:
 website:
   title: "Open Source Clinical Reporting summeR"
   description: "R programing workshop/conference with the focus of clinical reporting"
-  site-url: https://urban-journey-ov1k2l9.pages.github.io/
+  site-url: https://insightsengineering.github.io/nest-2023-summeR
   search: true
   navbar:
     left:
