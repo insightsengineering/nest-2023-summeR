@@ -24,7 +24,7 @@ website:
   page-footer:
     center:
       - text: "NEST"
-        href: https://insightsengineering.github.io/nest/
+        href: https://github.com/insightsengineering
       - text: "Good software engineering practice for R packages"
         href: https://openpharma.github.io/workshop-r-swe/
 
