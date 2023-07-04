@@ -15,11 +15,11 @@ title: "Open Source Clinical Reporting summeR"
 | 10:40-11:10 | Apply next-generation tools in real study                                                      | Liu Jia    |          |
 | 11:10-12:10 | Open discussion                                                                                |            |          |
 | 12:00-13:30 | Lunch                                                                                          |            |          |
-| 13:30-14:00 | Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets | Gao Shuang |          |
+| 13:30-14:00 | Revolutionize Data Exploration with Teal                                                       | Joe/Liming |          |
 | 14:00-14:30 | ECD liveTFL: Experience and feedback on an application based on the teal framework             | Kaiping    |          |
 | 14:30-15:00 | Transfer learning of Teal packages                                                             | Zhou Kai   |          |
 | 15:00-15:20 | break                                                                                          |            |          |
-| 15:20-15:50 | Revolutionize Data Exploration with Teal                                                       | Joe/Liming |          |
+| 15:20-15:50 | Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets | Gao Shuang  |          |
 | 15:50-16:20 | Table, Listings, and Graphs (TLG) Generation in Using tidytlg                                                       |     |          |
 | 16:20-17:20 | Discusion II                                                       |          |          |
 | 17:20-17:30 | Closing                                                       |          |          |
@@ -39,6 +39,10 @@ These tables are often complex, both in their conceptual structure and in the co
 
 By Liu Jia (Roche)
 
+Our real study focuses on chronic hepatitis B (CHB) virus infection. The programming team of this study is a mix of advanced R programmers and novices. The team explored using R based tools, OAK and Admiral, to support SDTMv and ADAM QC. Through the exploration and application, the team has gained lots of valuable experience on next-generation tools.
+Roche is diligent to work on "next-generation" solutions for our data and analytics platforms to move towards increased automation. Next-generation tools OAK and Admiral are good examples. Admiral, toolbox for programming Clinical Data Interchange Standards Consortium (CDISC) compliant Analysis Data Model (ADaM) datasets in R. The OAK Garden aims to automate the clinical data flow from Data Collection to Data Tabulation thereby automating the study of SDTMv Datasets, SDTMv specifications, eSubmission Deliverables SDTM xpt files & SDTM Define.xml.
+With the help and inspiration of developers and other users, the team has overcame lots of difficulties and gained valuable experience. And we are pleased to share these with others.
+
 
 ### NEST (Now and Future)
 
@@ -53,19 +57,20 @@ By Kaiping Yang (Beigene)
 This paper introduces a web app called ECD liveTFL, which is developed based on the R-based teal framework. The app allows users to select different clinical trial studies and snapshot dates through UI to generate ADaM data for subsequent TFL analysis. The app consists of two parts: data processing and TFL platform. The data processing part is responsible for data preprocessing according to the user's selection, and the TFL platform part is responsible for reading the processed data to perform interactive TFL analysis. This paper mainly introduces the extensions that the app has compared to the teal framework, as well as the development experience and feedback.
 Extensions
 ECD liveTFL app has the following extensions compared to the teal framework:
-•	Extension: The app extends the interactivity of the teal framework data preprocessing by splitting it into two parts, allowing users to generate different ADaM data according to their own choices.
-•	Improvement: The app enhances the display function of listing and figure by transforming the existing module, and adds the function of selecting the population analysis set of TFL.
-•	Customization: The app builds a configuration file database for different studies and combines it with UI, allowing users to dynamically modify the configuration file and feedback to the server side to generate interactive TFL, improving the customization level of TFL.
-•	Quality: The app ensures the quality of TFL while maintaining its flexibility by using leader programmer to perform unified authority management.
+
+  * Extension: The app extends the interactivity of the teal framework data preprocessing by splitting it into two parts, allowing users to generate different ADaM data according to their own choices.
+  * Improvement: The app enhances the display function of listing and figure by transforming the existing module, and adds the function of selecting the population analysis set of TFL.
+  * Customization: The app builds a configuration file database for different studies and combines it with UI, allowing users to dynamically modify the configuration file and feedback to the server side to generate interactive TFL, improving the customization level of TFL.
+  * Quality: The app ensures the quality of TFL while maintaining its flexibility by using leader programmer to perform unified authority management.
 Development experience
 We also gained some experience in the development process, such as:
-•	By building a configuration file database for different studies and combining it with UI, we achieved to let users dynamically modify the configuration file and feedback to the server side to generate interactive TFL, further enhancing the interactivity of TFL on more details. By using leader programmer to perform unified authority management, we ensured the quality of TFL while maintaining its flexibility.
-•	By transforming the existing module, we enhanced the display function of listing and figure, and added the function of selecting the population analysis set of TFL.
+  * By building a configuration file database for different studies and combining it with UI, we achieved to let users dynamically modify the configuration file and feedback to the server side to generate interactive TFL, further enhancing the interactivity of TFL on more details. By using leader programmer to perform unified authority management, we ensured the quality of TFL while maintaining its flexibility.
+  * By transforming the existing module, we enhanced the display function of listing and figure, and added the function of selecting the population analysis set of TFL.
 Development feedback
 We also received some feedback in the development process, mainly involving the following aspects:
-•	tern package: Provide more space for customizing statistical functions and statistical result labels;
-•	teal package: Add more layout frameworks and drop-down tabs functions;
-•	teal.reporter package: Enhance PDF and PPT rendering effects and custom style functions, and add a default function to download all TFL content.
+  * tern package: Provide more space for customizing statistical functions and statistical result labels;
+  * teal package: Add more layout frameworks and drop-down tabs functions;
+  * teal.reporter package: Enhance PDF and PPT rendering effects and custom style functions, and add a default function to download all TFL content.
 
 
 ### Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets
