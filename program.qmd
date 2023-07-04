@@ -5,39 +5,39 @@ title: "Open Source Clinical Reporting summeR"
 ## Program 
 
 | Time        | Topic                                                                                          | Presenter  | Location |
-|-------------|------------------------------------------------------------------------------------------------|------------|----------|
+|-------------|-------------------------------------------------------------------------------------|-----------------|----------|
 | 8:30-9:00   | Registration                                                                                   |            |          |
 | 9:00-9:10   | Welcome                                                                                        |            |          |
-| 9:10-9:20   | Opening Remarks                                                                                |            |          |
-| 9:20-9:50   | NEST                                                                                           | Vincent    |          |
-| 9:50-10:20  | rtables                                                                                        | Gabe       |          |
-| 10:20-10:40 | break                                                                                          |            |          |
+| 9:10-9:20   | **Opening Remarks**                                                                                |            |          |
+| 9:20-9:50   |  NEST (Now and Future)                                                                                           | Vincent    |          |
+| 9:50-10:20  | Reporting tables form a central component of regulatory filings in the pharmaceutical industry  | Gabe       |          |
+| 10:20-10:40 | **Break**                                                                                          |            |          |
 | 10:40-11:10 | Apply next-generation tools in real study                                                      | Liu Jia    |          |
-| 11:10-12:10 | Open discussion                                                                                |            |          |
-| 12:00-13:30 | Lunch                                                                                          |            |          |
+| 11:10-12:10 | Open discussion I                                                                               |            |          |
+| 12:00-13:30 | **Lunch**                                                                                          |            |          |
 | 13:30-14:00 | Revolutionize Data Exploration with Teal                                                       | Joe/Liming |          |
 | 14:00-14:30 | ECD liveTFL: Experience and feedback on an application based on the teal framework             | Kaiping    |          |
 | 14:30-15:00 | Transfer learning of Teal packages                                                             | Zhou Kai   |          |
-| 15:00-15:20 | break                                                                                          |            |          |
+| 15:00-15:20 | **Break**                                                                                          |            |          |
 | 15:20-15:50 | Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets | Gao Shuang  |          |
-| 15:50-16:20 | Table, Listings, and Graphs (TLG) Generation in Using tidytlg                                                       |     |          |
-| 16:20-17:20 | Discusion II                                                       |          |          |
-| 17:20-17:30 | Closing                                                       |          |          |
+| 15:50-16:20 | Table, Listings, and Graphs (TLG) Generation in Using tidytlg                                                       |  Chinghan Hsiao   |          |
+| 16:20-17:20 | Open discussion II                                                       |          |          |
+| 17:20-17:30 | **Closing**                                                       |          |          |
 
 
 
 ## Abstract
 
-### Reporting tables form a central component of regulatory filings in the pharmaceutical industry. 
+### Reporting tables form a central component of regulatory filings in the pharmaceutical industry
 
-By Gabe Becker
+*Gabe Becker*
 
 These tables are often complex, both in their conceptual structure and in the computations required to generate their individual cell values. Gabe will introduce the rtables package and show how visualization concepts, particularly faceting and the grammar of graphics, apply to tables generally and inform rtables' ability to succinctly declare and create complex structured tables such as those included in clinical trial filings. Gabe will also give a brief update of the work of the R Consortium's R Tables For Regulatory Submission (RTRS) working group.
 
 
 ### Apply next-generation tools in real study
 
-By Liu Jia (Roche)
+*Liu Jia (Roche)*
 
 Our real study focuses on chronic hepatitis B (CHB) virus infection. The programming team of this study is a mix of advanced R programmers and novices. The team explored using R based tools, OAK and Admiral, to support SDTMv and ADAM QC. Through the exploration and application, the team has gained lots of valuable experience on next-generation tools.
 Roche is diligent to work on "next-generation" solutions for our data and analytics platforms to move towards increased automation. Next-generation tools OAK and Admiral are good examples. Admiral, toolbox for programming Clinical Data Interchange Standards Consortium (CDISC) compliant Analysis Data Model (ADaM) datasets in R. The OAK Garden aims to automate the clinical data flow from Data Collection to Data Tabulation thereby automating the study of SDTMv Datasets, SDTMv specifications, eSubmission Deliverables SDTM xpt files & SDTM Define.xml.
@@ -46,13 +46,13 @@ With the help and inspiration of developers and other users, the team has overca
 
 ### NEST (Now and Future)
 
-By Vincent Shen
+*Vincent Shen (Roche)*
 
 Over the past 5 years, NEST has evolved from a small proof of concept to a well established project containing numerous R packages for streamlining analyses in clinical reporting and beyond. With ever-increasing engagement from internal and external users, NEST is well positioned to further influence and revolutionize how we generate insights for clinical research in the pharmaceutical industry. In this talk, we will share our development roadmap and highlight ideas and plans that we are actively pursuing for various products under the NEST umbrella. We will also share how open-sourcing and collaboration with other companies have benefited us so far in NEST, as well as our mid-to-long term vision of the project.
 
 ### ECD liveTFL: Experience and feedback on an application based on the teal framework
 
-By Kaiping Yang (Beigene)
+*Kaiping Yang (Beigene)*
 
 This paper introduces a web app called ECD liveTFL, which is developed based on the R-based teal framework. The app allows users to select different clinical trial studies and snapshot dates through UI to generate ADaM data for subsequent TFL analysis. The app consists of two parts: data processing and TFL platform. The data processing part is responsible for data preprocessing according to the user's selection, and the TFL platform part is responsible for reading the processed data to perform interactive TFL analysis. This paper mainly introduces the extensions that the app has compared to the teal framework, as well as the development experience and feedback.
 Extensions
@@ -75,7 +75,7 @@ We also received some feedback in the development process, mainly involving the 
 
 ### Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets
 
-By Gao Shuang (Beigene)
+*Gao Shuang (Beigene)*
 
 R Admiral is an R package designed for programming ADaM datasets and streamlining the data preparation and analysis process. Compared to SAS procedure, R Admiral package has several advantages:
 •	R Admiral is built on a modular approach where an ADaM dataset is constructed through a sequence of derivations. This feature allows for easy adjustments to the code by adding, removing, or modifying derivations.
@@ -87,20 +87,30 @@ While both R Admiral and SAS can generate datasets, their syntax, libraries, and
 
 ### Transfer learning of Teal packages
 
-By Zhou Kai (AZ)
+*Zhou Kai (AstraZeneca)*
 
 Teal is an open source framework for building interactive clinical reporting Shiny APP. AZ China team decided to adopt it as a supplement tool for TLF generation a year ago. It turned out that this tool can be very useful to generate interactive TLF in a very short time in line with high quality. But meanwhile, we encountered a lot of challenges and problems. We'd like to share with you our experience from AZ programming perspective.
 
 ### Revolutionize Data Exploration with Teal
 
-By Chendi (Roche)
+*Chendi Liao (Roche)*
 
-{Teal} is an innovative open-source and scalable R-shiny based framework for interactive data analysis and exploration. It enables data scientists to streamline the creation of web applications, bringing data closer and faster to stakeholders, resulting in quicker insights and better-informed decisions. The framework's features, such as dynamic data filtering, code reproducibility and report generation, elevate the user experience and promote transparency in the data exploration process. With over 50 analysis templates and the ability to easily integrate customized modules for different analyses or data types, {teal} offers a comprehensive and extendable solution for data exploration. In this talk, we will introduce the {teal} framework, highlight its key features, and share how this has been adopted by hundreds of data scientists inside our organization. For more information about {teal}, please visit https://insightsengineering.github.io/teal/
-
-
+{Teal} is an innovative open-source and scalable R-shiny based framework for interactive data analysis and exploration. It enables data scientists to streamline the creation of web applications, bringing data closer and faster to stakeholders, resulting in quicker insights and better-informed decisions. The framework's features, such as dynamic data filtering, code reproducibility and report generation, elevate the user experience and promote transparency in the data exploration process. With over 50 analysis templates and the ability to easily integrate customized modules for different analyses or data types, {teal} offers a comprehensive and extendable solution for data exploration. In this talk, we will introduce the {teal} framework, highlight its key features, and share how this has been adopted by hundreds of data scientists inside our organization. For more information about {teal}, please visit \url{https://insightsengineering.github.io/teal/}
 
 
+### Table, Listings, and Graphs (TLG) Generation in Using tidytlg
 
+*Chinghan Hsiao (Janssen China Research & Development)*
+
+
+In recent years, there has been rapid growth in the adoption of open-source technologies. An increasing number of pharmaceutical companies are embracing R as a viable alternative to SAS or as supplementary software for clinical trial reporting. Gaining true proficiency in R, like any programming language, is a process that demands time, effort, and practical experience. Therefore, Janssen R&D has developed the tidytlg package to facilitate the smooth transition of programmers from SAS to R, this package has been released on GitHub.
+
+The primary objective of the tidytlg package is to enable the creation of tables, listings, and graphs (TLG) for clinical study reports using the Tidyverse package. This can be achieved through two main methods with this package:
+1.	Functional method: Building a custom script for each TLG.
+2.	Metadata method: Building a generic script that utilizes column and table metadata to produce each TLG result.
+This package provides a framework for creating TLG outputs. The programming workflow includes the following steps: preparing the environment, processing the data, generating the results, and outputting them.
+
+In this presentation, topics will cover a general processing flow for generating tables, listings, and graphs, as well as various functions such as defining column variables, generating analysis rows of summary statistics sequentially, and creating outputs (e.g., freq(), univar(), gentlg()). 
 
 
 
