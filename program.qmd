@@ -9,18 +9,18 @@ title: "Open Source Clinical Reporting summeR (2023-August-29)"
 | 8:30-9:00   | Registration                                                                                   |            |          |
 | 9:00-9:10   | Welcome                                                                                        |            |          |
 | 9:10-9:20   | **Opening Remarks**                                                                                |            |          |
-| 9:20-9:50   |  NEST (Now and Future)                                                                                           | Vincent    |          |
-| 9:50-10:20  | Reporting tables form a central component of regulatory filings in the pharmaceutical industry  | Gabe       |          |
+| 9:20-9:50   |  [NEST (Now and Future)](#nest-now-and-future)                                                                                           | Vincent    |          |
+| 9:50-10:20  | [Reporting tables form a central component of regulatory filings in the pharmaceutical industry](#reporting-tables-form-a-central-component-of-regulatory-filings-in-the-pharmaceutical-industry)  | Gabe       |          |
 | 10:20-10:40 | **Break**                                                                                          |            |          |
-| 10:40-11:10 | Apply next-generation tools in real study                                                      | Liu Jia    |          |
+| 10:40-11:10 | [Apply next-generation tools in real study](#apply-next-generation-tools-in-real-study)                                                      | Liu Jia    |          |
 | 11:10-12:10 | Open discussion                                                                               |            |          |
 | 12:00-13:30 | **Lunch**                                                                                          |            |          |
-| 13:30-14:00 | Revolutionize Data Exploration with Teal                                                       | Joe/Liming |          |
-| 14:00-14:30 | ECD liveTFL: Experience and feedback on an application based on the teal framework             | Kaiping    |          |
-| 14:30-15:00 | Transfer learning of Teal packages                                                             | Zhou Kai   |          |
+| 13:30-14:00 | [Revolutionize Data Exploration with Teal](#revolutionize-data-exploration-with-teal)                                                       | Joe/Liming |          |
+| 14:00-14:30 | [ECD liveTFL: Experience and feedback on an application based on the teal framework](#exploring-the-advantages-of-r-admiral-package-over-sas-procedure-for-programming-adam-datasets)             | Kaiping    |          |
+| 14:30-15:00 | [Transfer learning of Teal packages](#transfer-learning-of-teal-packages)                                                             | Zhou Kai   |          |
 | 15:00-15:20 | **Break**                                                                                          |            |          |
-| 15:20-15:50 | Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets | Gao Shuang  |          |
-| 15:50-16:20 | Table, Listings, and Graphs (TLG) Generation in Using tidytlg                                                       |  Chinghan Hsiao   |          |
+| 15:20-15:50 | [Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets](#exploring-the-advantages-of-r-admiral-package-over-sas-procedure-for-programming-adam-datasets) | Gao Shuang  |          |
+| 15:50-16:20 | [Table, Listings, and Graphs (TLG) Generation in Using tidytlg](#table-listings-and-graphs-tlg-generation-in-using-tidytlg)                                                       |  Chinghan Hsiao   |          |
 | 16:20-17:20 | Panel discussion                                                       |          |          |
 | 17:20-17:30 | **Closing**                                                       |          |          |
 
