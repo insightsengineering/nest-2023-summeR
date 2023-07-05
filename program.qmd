@@ -13,7 +13,7 @@ title: "Open Source Clinical Reporting summeR (2023-August-29)"
 | 9:50-10:20  | Reporting tables form a central component of regulatory filings in the pharmaceutical industry  | Gabe       |          |
 | 10:20-10:40 | **Break**                                                                                          |            |          |
 | 10:40-11:10 | Apply next-generation tools in real study                                                      | Liu Jia    |          |
-| 11:10-12:10 | Open discussion I                                                                               |            |          |
+| 11:10-12:10 | Open discussion                                                                               |            |          |
 | 12:00-13:30 | **Lunch**                                                                                          |            |          |
 | 13:30-14:00 | Revolutionize Data Exploration with Teal                                                       | Joe/Liming |          |
 | 14:00-14:30 | ECD liveTFL: Experience and feedback on an application based on the teal framework             | Kaiping    |          |
@@ -21,7 +21,7 @@ title: "Open Source Clinical Reporting summeR (2023-August-29)"
 | 15:00-15:20 | **Break**                                                                                          |            |          |
 | 15:20-15:50 | Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets | Gao Shuang  |          |
 | 15:50-16:20 | Table, Listings, and Graphs (TLG) Generation in Using tidytlg                                                       |  Chinghan Hsiao   |          |
-| 16:20-17:20 | Open discussion II                                                       |          |          |
+| 16:20-17:20 | Panel discussion                                                       |          |          |
 | 17:20-17:30 | **Closing**                                                       |          |          |
 
 
