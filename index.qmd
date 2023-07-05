@@ -2,8 +2,6 @@
 title: "Open Source Clinical Reporting summeR"
 ---
 
-The [call for abstracts](https://docs.qq.com/form/page/DWWdQQnNNVGNjaFV2) is open from now till the 21st of June!
-
 The main focus of this workshop is: open-source & collaboration in Pharma, sharing experience in using open-sourced R packages (such as Admiral and NEST packages) for 
 
 * SDTM mapping
