@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>ECD liveTFL</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kaiping Yang, Jie Liu, Carrie Shi" />
+    <meta name="author" content="Cheng Zhang, Yuhang Liu, Shuang Gao, Yusi Liu" />
+    <script src="ECD_liveTFL_files/header-attrs/header-attrs.js"></script>
+    <link href="ECD_liveTFL_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="ECD_liveTFL_files/tile-view/tile-view.js"></script>
+    <script src="ECD_liveTFL_files/clipboard/clipboard.min.js"></script>
+    <link href="ECD_liveTFL_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="ECD_liveTFL_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="ECD_liveTFL_files/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="ECD_liveTFL_files/fabric/fabric.min.js"></script>
+    <link href="ECD_liveTFL_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="ECD_liveTFL_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#E68080"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="ECD_liveTFL_files/xaringanExtra-progressBar/progress-bar.js"></script>
+    <link href="ECD_liveTFL_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="ECD_liveTFL_files/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# ECD liveTFL
+]
+.subtitle[
+## Experience and feedback on an application based on the teal framework
+]
+.author[
+### Kaiping Yang, Jie Liu, Carrie Shi
+]
+.author[
+### Cheng Zhang, Yuhang Liu, Shuang Gao, Yusi Liu
+]
+.institute[
+### BeiGene
+]
+
+---
+
+
+&lt;!-- xaringan:::inf_mr() --&gt;
+&lt;!-- https://www.garrickadenbuie.com/ --&gt;
+
+
+
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: #0051BA;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
+## Agenda
+
+.left-column[
+- **Introduction**
+- **ECD LiveTFL**
+- **Advantages**
+- **Usage process**
+  - **Flow chart**
+  - **Data Process**
+  - **Configuration Files**
+  - **TFL Platform**
+- **Experience**
+- **Feedback**
+- **Summary**
+
+]
+
+.right-column[
+&lt;center&gt;&lt;img src="files/logo.png" /&gt;&lt;/center&gt;
+]
+
+
+---
+## Introduction
+
+**ECD LiveTFL** is a web app developed based on the R teal framework (interactive Exploratory Data Analysis with Shiny Web-Applications), which can provide real-time and interactive clinical trial data analysis results (TFL) display to support data-driven decision making. 
+
+### teal framework
+
+The teal framework is a tool for building TFL interactive analysis web applications, which includes the following components:
+
+-	**teal**: A Exploratory Web Apps package for Analyzing Clinical Trials Data
+-	**teal.data**: A package for defining data models and loading data sources
+-	**teal.transform**: Functions for extracting and merging data
+-	**teal.code**: A class for storing and executing code
+-	**teal.widgets**: A package for creating shiny widgets
+-	**teal.logger**: A package for setting up logging
+-	**teal.reporter**: A tool for generating reports
+-	**teal.modules.general**: A package for adding general modules to teal applications
+-	**teal.modules.clinical**: A package for adding standard clinical output modules to teal applications
+
+---
+
+## ECD LiveTFL
+
+.panelset[
+.panel[.panel-name[Introduction]
+
+  
+.left-column[
+&lt;center&gt;&lt;img src="files/logo.png" /&gt;&lt;/center&gt;
+]
+
+.right-column[
+![](files/introduction.jpg)
+]
+
+
+]
+
+.panel[.panel-name[Data Process]
+&lt;center&gt;&lt;img src="files/data_process1.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[TFL Platform]
+&lt;center&gt;&lt;img src="files/t_dm.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Advantages
+
+Compared to **traditional TFL**, **ECD LiveTFL** has the following advantages:
+-	**Centralization**: All data and code are stored on the server side, no need to install or update software locally
+-	**Real-time**: All outputs are generated based on the latest EDC data, no need to wait or refresh
+-	**Interactivity**: Users can adjust the output results dynamically by selecting different parameters through the UI, such as study, phase, snapshot date, group, filter, etc.
+-	**Exploratory**: Users can view the distribution of each variable through the variable browser, view different levels of statistical results through tables, listings, figures, and combine and download selected outputs through the report previewer
+-	**Possibility**: Users can customize the output content and format through the configuration file database and permission management system, increasing flexibility and quality control
+
+---
+
+## Usage process
+
+ECD LiveTFL consists of three parts: data processing, configuration files and TFL platform. 
+- **Data Process**: Users first select different clinical trial study, phase and snapshot date through the data processing app to generate ADAM data for subsequent TFL analysis. 
+- **Configuration Files**: Data preprocessing and subsequent TFL platforms were dynamically updated through the configuration files of different studies.
+- **TFL Platform**: Using the TFL platform app to read the processed data from the previous app to perform TFL interactive analysis.
+---
+
+### Flow chart
+
+
+
+
+.panelset[
+.panel[.panel-name[Overview]
+![flowchart](files/flowchart1.jpg)
+]
+
+.panel[.panel-name[Data Flow]
+![flowchart](files/flowchart2.jpg)
+]
+
+.panel[.panel-name[Trigger]
+![flowchart](files/flowchart3.jpg)
+]
+]
+
+---
+
+### Data Process
+
+.panelset[
+.panel[.panel-name[Choose Study]
+&lt;center&gt;&lt;img src="files/data_process1.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[Data Processing]
+&lt;center&gt;&lt;img src="files/data_process2.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[Ready to TFL]
+&lt;center&gt;&lt;img src="files/data_process3.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+### Configuration Files
+
+.panelset[
+.panel[.panel-name[table preprocessing]
+&lt;center&gt;&lt;img src="files/config_table.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[listing preprocessing]
+&lt;center&gt;&lt;img src="files/config_listing.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[module parameter]
+&lt;center&gt;&lt;img src="files/config_module.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+
+---
+
+### Configuration Files
+
+#### Update TFL layout dynamically
+
+.panelset[
+
+.panel[.panel-name[Choose All Phase]
+
+  .pull-left[
+  &lt;center&gt;&lt;img src="files/app_select_layout1.jpg" height="100%" /&gt;&lt;/center&gt;
+  ]
+  
+  .pull-right[
+  &lt;center&gt;&lt;img src="files/app_layout1.jpg" height="100%" /&gt;&lt;/center&gt;
+  ]
+
+]
+
+.panel[.panel-name[Choose  Phase 1]
+
+  .pull-left[
+  &lt;center&gt;&lt;img src="files/app_select_layout2.jpg" height="100%" /&gt;&lt;/center&gt;
+  ]
+  
+  .pull-right[
+  &lt;center&gt;&lt;img src="files/app_layout2.jpg" height="100%" /&gt;&lt;/center&gt;
+  ]
+]
+
+]
+
+
+---
+
+### TFL Platform
+
+The TFL Platform app has 8 tabs, which are:
+-	**Introduction**: Introduction of Study information
+-	**Tables**: Displays summary tables, allowing you to select different table types and parameters, as well as filter by grouping variables and filtering conditions
+-	**Figures**: Displays dynamic graphs, allowing you to select different graph types and parameters, as well as filter by grouping variables and filtering conditions
+-	**Listings**: Displays data listings, allowing you to select different listing types and parameters, as well as sort and filter by sorting variables and filtering conditions
+-	**Data Tables**: Displays tables of all source data (ADaM) in the current session, allowing you to view the structure and content of each table
+-	**Variable Browser**: Displays the distribution of each variable, allowing you to select different variable types and statistical methods, as well as whether to stratify by grouping variables
+- **User Manual**: User Manual of ECD liveTFL
+-	**Report previewer**: Displays the report preview interface, allowing you to combine and select outputs from the previous tabs and download them in PDF or PPT format
+---
+
+#### Tables
+
+.panelset[
+.panel[.panel-name[dm table]
+&lt;center&gt;&lt;img src="files/t_dm.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[aesum table]
+&lt;center&gt;&lt;img src="files/t_aesum.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[aept table]
+&lt;center&gt;&lt;img src="files/t_aept.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[aesocpt table]
+&lt;center&gt;&lt;img src="files/t_aesocpt.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+]
+---
+
+#### Figures
+
+.panelset[
+.panel[.panel-name[swimlane figure]
+&lt;center&gt;&lt;img src="files/f_swimlane.jpg" height="90%" /&gt;&lt;/center&gt;
+]
+
+]
+---
+
+#### Listings
+
+.panelset[
+.panel[.panel-name[disposition listing]
+&lt;center&gt;&lt;img src="files/l_ds.jpg" height="90%" /&gt;&lt;/center&gt;
+]
+
+]
+---
+
+#### Download
+
+.panelset[
+
+.panel[.panel-name[Download Table]
+&lt;center&gt;&lt;img src="files/download_table.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[html format]
+ &lt;center&gt;&lt;img src="files/download_table_html.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[docx format]
+&lt;center&gt;&lt;img src="files/download_table_docx.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+  
+]
+
+---
+
+#### Download
+
+.panelset[
+
+.panel[.panel-name[Download Listing]
+&lt;center&gt;&lt;img src="files/download_listing.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[html format]
+ &lt;center&gt;&lt;img src="files/download_listing_html.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+
+.panel[.panel-name[docx format]
+&lt;center&gt;&lt;img src="files/download_listing_docx.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+  
+]
+
+---
+
+#### User manual
+
+.panelset[
+
+.panel[.panel-name[User manual]
+ &lt;center&gt;&lt;img src="files/user_manual1.jpg" height="100%" /&gt;&lt;/center&gt;
+]
+
+  
+]
+
+---
+
+## Experience
+
+The teal framework passes in data before starting a session. This creates difficulties when we want to start different data after the session using user information.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+```r
+app &lt;- init(
+  data = teal_data(
+    dataset("iris", iris),
+    dataset("mtcars", mtcars)
+  ),
+  modules = example_module(label = "example teal module"),
+  title = "App title",
+  header = tags$h1("Sample App"),
+  footer = tags$p("Copyright 2017 - 2023")
+)
+shinyApp(app$ui, app$server)
+```
+]
+
+.panel[.panel-name[App]
+
+&lt;center&gt;&lt;img src="files/teal_example.png" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+
+---
+
+## Experience
+
+Fortunately, we can use the renderUI function to render the teal framework to uiOutput, so that the shiny app nested the teal app to start the session and load the data.
+
+However, the nested teal app cannot adapt to the screen size, and the default height is 400px.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```r
+ui &lt;- fluidPage(
+  uiOutput("tfl", style = "height: 100%; width: 100%;")
+)
+server &lt;- function(input, output, session) {
+  user_name &lt;- session$user %&gt;% str_replace_all("\\.","_") %&gt;% tolower()
+  observeEvent(shinybrowser::get_height(),{
+    output$tfl &lt;- renderUI({
+      source("teal_config.R", local = TRUE)
+      shinyApp(ui = app$ui, server = app$server)
+    })
+  })
+}
+shinyApp(ui, server)
+```
+]
+
+.panel[.panel-name[App]
+&lt;center&gt;&lt;img src="files/app_400px.jpg" height="300px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Experience
+
+Fortunately, we can make nested teal apps adaptive to screen size through the **shinybrowser** package.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```r
+ui &lt;- fluidPage(
+  shinybrowser::detect(),
+  uiOutput("tfl", style = "height: 100%; width: 100%;")
+)
+server &lt;- function(input, output, session) {
+  user_name &lt;- session$user %&gt;% str_replace_all("\\.","_") %&gt;% tolower()
+  observeEvent(shinybrowser::get_height(),{
+    output$tfl &lt;- renderUI({
+      source("teal_config.R", local = TRUE)
+      shinyApp(ui = app$ui, server = app$server, 
+               options =list(height = paste0(shinybrowser::get_height(),"px"), width = "100%"))
+    })
+  })
+}
+shinyApp(ui, server)
+```
+]
+
+.panel[.panel-name[App]
+&lt;center&gt;&lt;img src="files/t_dm.jpg" height="500px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Experience
+
+Another problem with nested teal apps is that DT packages may not render the table correctly.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```r
+ui &lt;- fluidPage(
+  uiOutput("tfl")
+)
+server &lt;- function(input, output, session) {
+  output$tfl &lt;- renderUI({
+    ui &lt;- fluidPage(
+      DT::dataTableOutput("table")
+    )
+    server &lt;- function(input, output, session) {
+      output$table &lt;- DT::renderDataTable({
+        DT::datatable(iris)
+      })
+    }
+    shinyApp(ui, server, options = list(height = "800px", width = "100%"))
+  })
+}
+shinyApp(ui, server)
+```
+]
+
+.panel[.panel-name[App]
+&lt;center&gt;&lt;img src="files/app_DT.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Experience
+
+One solution is to use the parameter **server = FALSE** to make the DT render the table on the front end.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```r
+ui &lt;- fluidPage(
+  uiOutput("tfl")
+)
+server &lt;- function(input, output, session) {
+  output$tfl &lt;- renderUI({
+    ui &lt;- fluidPage(
+      DT::dataTableOutput("table")
+    )
+    server &lt;- function(input, output, session) {
+      output$table &lt;- DT::renderDataTable({
+        DT::datatable(iris)
+      }, server = FALSE)
+    }
+    shinyApp(ui, server, options = list(height = "800px", width = "100%"))
+  })
+}
+shinyApp(ui, server)
+```
+]
+
+.panel[.panel-name[App]
+&lt;center&gt;&lt;img src="files/app_DT2.jpg" height="350px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Experience
+
+An html file in the absolute path can be loaded in a shiny app using **addResourcePath()**.
+
+Using **renderUI()** to render html files prevents loaded html scripts from interacting with the css style of the shiny app.
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```r
+ui &lt;- fluidPage(
+  uiOutput("user_manual")
+)
+
+server &lt;- function(input, output, session) {
+  addResourcePath("files", "/teal/files")
+  output$user_manual &lt;- renderUI({
+    tags$iframe(style="height:800px; width:100%; scrolling=yes; border: none;", 
+                src="files/user_manual.html")
+  })
+}
+shinyApp(ui, server)
+```
+]
+
+.panel[.panel-name[App]
+&lt;center&gt;&lt;img src="files/user_manual2.jpg" height="300px" /&gt;&lt;/center&gt;
+]
+]
+
+---
+
+## Feedback
+The future development direction of ECD LiveTFL is to further optimize user experience and meet user needs through user satisfaction and suggestions. 
+
+### tern package
+-	Give users more space to customize statistical functions and results. For example:
+  - Provide freedom to modify quantiles label format
+  - Provide freedom to modify statistical result format, such as not showing percentage sign
+-	Provide freedom to modify quantiles label format
+-	Provide freedom to modify statistical result format, such as not showing percentage sign
+
+---
+
+## Feedback
+
+### teal package
+-	Page layout improvement:
+  - Add more layout frameworks, such as shinydashboard.
+  - Add drop-down tab function. When the analysis display of table listing figure is too much, the drop-down function of the page tab will make the page more concise and easy to use. The current page tab can only use nesting function, which can not fully meet the needs of users.
+-	Add more layout frameworks, such as shinydashboard.
+-	Add drop-down tab function. When the analysis display of table listing figure is too much, the drop-down function of the page tab will make the page more concise and easy to use. The current page tab can only use nesting function, which can not fully meet the needs of users.
+
+---
+
+## Feedback
+
+### teal.reporter package
+-	Enhance download function:
+  - Enhance PDF and PPT rendering effects. Solve the problems of data truncation, poor layout, etc.
+  - Enhance developer's ability to customize report file style.
+  - The reporter preview interface currently provided requires adding an add card button to each report ui in the previous tab page to achieve the function of integrating and downloading all outputs. Consider adding a default function to download all TFL content from the previous tab pages in the reporter preview interface.
+
+
+---
+
+## Summary
+
+ECD LiveTFL expands on the functionality of the teal framework in the following ways:
+
+--
+
+1.	By **connecting two apps**, it expands the functionality of the teal framework, allowing it to produce different ADAM data for displaying TFL after data preprocessing based on simple UI operations by users, enhancing the interactivity of data preprocessing. It delivers data specific to each user through permission management.
+
+--
+
+2.	By building a **configuration file** database for different studies and combining it with UI, it allows users to dynamically modify configuration files in real time and feedback to the server side to produce interactive TFLs, further enhancing the interactivity of TFLs in more detail. By using leader programmer for unified permission management, it ensures the quality of TFL while maintaining its flexibility.
+
+--
+
+3.	**Enhanced** listing display, filtering, searching, downloading and other functions. And by using related tables to achieve unified filtering of all listings.
+
+--
+
+---
+class: center, middle
+
+# Thanks!
+
+### ECD liveTFL Team
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
