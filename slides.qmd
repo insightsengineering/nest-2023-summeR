@@ -2,4 +2,18 @@
 title: "Slides"
 ---
 
-## Program slides will be shared here. Stay tuned
+[Reporting tables form a central component of regulatory filings in the pharmaceutical industry](resources/summeR 2 rtables_ existing, fit for purpose, production ready.pdf)
+
+[Apply next-generation tools in real study](resources/SummeR_JiaL.pdf)
+
+[NEST (Now and Future)](resources/NEST_ Now & Future.pdf)
+
+[ECD liveTFL: Experience and feedback on an application based on the teal framework](resources/summeR 5 ECD_liveTFL/ECD_liveTFL.html)
+
+[Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets](resources/summeR 7 Exploring the Advantages of R Admiral Package - Shuang Gao/Exploring the Advantages of R Admiral Package.html)
+
+[Transfer learning of Teal packages](resources/summeR 6 Transfer Learning of Teal Packages_Kai Zhou.pptx.pdf)
+
+[Revolutionize Data Exploration with Teal](resources/teal presentation - useR China Aug 2023.pdf)
+
+[Table, Listings, and Graphs (TLG) Generation in Using tidytlg](resources/Tables, Listings, and Graphs (TLG)_final-mp4.pdf)
