@@ -3,7 +3,7 @@ title: "Video and Slides"
 ---
 
 [Reporting tables form a central component of regulatory filings in the pharmaceutical industry](resources/summeR 2 rtables_ existing, fit for purpose, production ready.pdf)
-[Video](resources/liming.mp4)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-liming_need_trime.mp4)
 
 [Apply next-generation tools in real study](resources/SummeR_JiaL.pdf)
 [Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-jia.mp4)
