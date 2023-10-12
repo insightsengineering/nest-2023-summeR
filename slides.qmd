@@ -1,19 +1,27 @@
 ---
-title: "Slides"
+title: "Video and Slides"
 ---
 
 [Reporting tables form a central component of regulatory filings in the pharmaceutical industry](resources/summeR 2 rtables_ existing, fit for purpose, production ready.pdf)
+[Video](resources/liming.mp4)
 
 [Apply next-generation tools in real study](resources/SummeR_JiaL.pdf)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-jia.mp4)
 
 [NEST (Now and Future)](resources/NEST_ Now & Future.pdf)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-vincent.mp4)
 
 [ECD liveTFL: Experience and feedback on an application based on the teal framework](resources/summeR 5 ECD_liveTFL/ECD_liveTFL.html)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-kaiping.mp4)
 
 [Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets](resources/summeR 7 Exploring the Advantages of R Admiral Package - Shuang Gao/Exploring the Advantages of R Admiral Package.html)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-shuang.mp4)
 
 [Transfer learning of Teal packages](resources/summeR 6 Transfer Learning of Teal Packages_Kai Zhou.pptx.pdf)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-kai.mp4)
 
 [Revolutionize Data Exploration with Teal](resources/teal presentation - useR China Aug 2023.pdf)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-Pawel.mp4)
 
 [Table, Listings, and Graphs (TLG) Generation in Using tidytlg](resources/Tables, Listings, and Graphs (TLG)_final-mp4.pdf)
+[Video](resources/Open_Source_Clinical_Reporting_summeR_Conference - Trim-chinghan.mp4)
