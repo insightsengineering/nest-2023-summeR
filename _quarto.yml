@@ -19,7 +19,7 @@ website:
         text: Program
         icon: "folder"
       - href: slides.qmd
-        text: Slides
+        text: Video and Slides
         icon: "file-earmark-slides"
   page-footer:
     center:
