@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://insightsengineering.github.io/nest-2023-summeR/program.html</loc>
-    <lastmod>2023-08-29T18:06:46.544Z</lastmod>
+    <loc>https://insightsengineering.github.io/nest-2023-summeR/slides.html</loc>
+    <lastmod>2023-10-12T13:53:47.014Z</lastmod>
   </url>
   <url>
     <loc>https://insightsengineering.github.io/nest-2023-summeR/index.html</loc>
-    <lastmod>2023-08-29T18:06:45.568Z</lastmod>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/nest-2023-summeR/slides.html</loc>
-    <lastmod>2023-08-29T18:06:44.912Z</lastmod>
+    <lastmod>2023-10-12T13:53:46.078Z</lastmod>
   </url>
   <url>
     <loc>https://insightsengineering.github.io/nest-2023-summeR/reg.html</loc>
-    <lastmod>2023-08-29T18:06:45.876Z</lastmod>
+    <lastmod>2023-10-12T13:53:45.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://insightsengineering.github.io/nest-2023-summeR/program.html</loc>
+    <lastmod>2023-10-12T13:53:46.718Z</lastmod>
   </url>
 </urlset>
