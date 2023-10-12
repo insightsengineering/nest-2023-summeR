@@ -6,22 +6,22 @@ title: "Video and Slides"
 [Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-liming_need_trime.mp4)
 
 [Apply next-generation tools in real study](resources/SummeR_JiaL.pdf)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-jia.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-jia.mp4)
 
 [NEST (Now and Future)](resources/NEST_ Now & Future.pdf)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-vincent.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-vincent.mp4)
 
 [ECD liveTFL: Experience and feedback on an application based on the teal framework](resources/summeR 5 ECD_liveTFL/ECD_liveTFL.html)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-kaiping.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-kaiping.mp4)
 
 [Exploring the Advantages of R Admiral Package Over SAS Procedure for Programming ADaM Datasets](resources/summeR 7 Exploring the Advantages of R Admiral Package - Shuang Gao/Exploring the Advantages of R Admiral Package.html)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-shuang.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-shuang.mp4)
 
 [Transfer learning of Teal packages](resources/summeR 6 Transfer Learning of Teal Packages_Kai Zhou.pptx.pdf)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-kai.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-kai.mp4)
 
 [Revolutionize Data Exploration with Teal](resources/teal presentation - useR China Aug 2023.pdf)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-Pawel.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-Pawel.mp4)
 
 [Table, Listings, and Graphs (TLG) Generation in Using tidytlg](resources/Tables, Listings, and Graphs (TLG)_final-mp4.pdf)
-[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20TrimTrim-chinghan.mp4)
+[Video](https://github.com/insightsengineering/nest-2023-summeR/raw/main/resources/Open_Source_Clinical_Reporting_summeR_Conference%20-%20Trim-chinghan.mp4)
