@@ -26,4 +26,4 @@ This event received high interest from over 100+ organisations, across industry 
 
 Highlight from the event!
 
-<img src="resources/summeR" width="100%">
+<img src="resources/summeR.jpg" width="100%">
